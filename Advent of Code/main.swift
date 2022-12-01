@@ -24,7 +24,7 @@ func main() {
     }
     
     print(elves)
-    print(elves.max()!)
+    print(elves.sorted().dropFirst(elves.count - 3).reduce(0, +))
 }
 
 main()
